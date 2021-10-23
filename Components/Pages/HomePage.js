@@ -3,6 +3,7 @@ import { View, Text, StyleSheet, StatusBar, Button, TouchableOpacity } from "rea
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import PushNotification from "react-native-push-notification";
 
+//hi there
 function headerHomePage() {
     return (
         <View style={headerStyles.HeaderContainer}>
