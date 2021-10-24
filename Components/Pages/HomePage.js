@@ -26,19 +26,19 @@ function MainHomePage() {
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                 >
-                    <Text style={ButtonStyles.TextOne}>ButtonOne</Text>
+                    <Text style={ButtonStyles.TextOne}>ButtonTwo</Text>
                 </TouchableOpacity>
                 </View>
                <View style={MainHomePageStyles.ButtonContainer}>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                 >
-                    <Text style={ButtonStyles.TextOne}>ButtonOne</Text>
+                    <Text style={ButtonStyles.TextOne}>ButtonThree</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                 >
-                    <Text style={ButtonStyles.TextOne}>ButtonOne</Text>
+                    <Text style={ButtonStyles.TextOne}>ButtonFour</Text>
                 </TouchableOpacity>
                </View>
             </View>
