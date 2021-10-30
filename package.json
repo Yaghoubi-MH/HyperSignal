@@ -17,7 +17,6 @@
     "convert-excel-to-json": "^1.7.0",
     "react": "17.0.2",
     "react-native": "0.66.0",
-    "react-native-my-sql-connection": "^1.0.4",
     "react-native-paper": "^4.9.2",
     "react-native-push-notification": "^8.1.1",
     "react-native-responsive-screen": "^1.4.2",
