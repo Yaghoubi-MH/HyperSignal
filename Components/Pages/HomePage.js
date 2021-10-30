@@ -12,12 +12,10 @@ function headerHomePage() {
     )
 }
 
-function MainHomePage() {
+function Buttons() {
     return (
-        <View style={MainHomePageStyles.MainContainer}>
-            {headerHomePage()}
-            <View>
-                <View style={MainHomePageStyles.ButtonContainer}>
+        <View>
+            <View style={MainHomePageStyles.ButtonContainer}>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                 >
@@ -28,8 +26,8 @@ function MainHomePage() {
                 >
                     <Text style={ButtonStyles.TextOne}>ButtonTwo</Text>
                 </TouchableOpacity>
-                </View>
-               <View style={MainHomePageStyles.ButtonContainer}>
+            </View>
+            <View style={MainHomePageStyles.ButtonContainer}>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                 >
@@ -40,8 +38,16 @@ function MainHomePage() {
                 >
                     <Text style={ButtonStyles.TextOne}>ButtonFour</Text>
                 </TouchableOpacity>
-               </View>
             </View>
+        </View>
+    )
+}
+
+function MainHomePage() {
+    return (
+        <View style={MainHomePageStyles.MainContainer}>
+            {headerHomePage()}
+            {Buttons()}
         </View>
     )
 }
@@ -69,7 +75,7 @@ const MainHomePageStyles = StyleSheet.create({
         width: wp("100%"),
         height: hp("100%"),
     },
-    ButtonContainer : {
+    ButtonContainer: {
         flexDirection: "row",
         justifyContent: "space-around",
         marginTop: wp("10%")
