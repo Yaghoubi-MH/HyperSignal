@@ -1,10 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet, StatusBar, Button, TouchableOpacity } from "react-native";
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
+import { useNavigation } from "@react-navigation/core";
 import PushNotification from "react-native-push-notification";
 
 
-function headerHomePage() {
+function HeaderHomePage() {
     return (
         <View style={headerStyles.HeaderContainer}>
             <Text style={headerStyles.HeaderText}>welcome to hypersignal</Text>
@@ -13,13 +14,15 @@ function headerHomePage() {
 }
 
 function Buttons() {
+    const navigation = useNavigation()
     return (
         <View>
             <View style={MainHomePageStyles.ButtonContainer}>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
+                    onPress={()=>navigation.navigate("Search")}
                 >
-                    <Text style={ButtonStyles.TextOne}>ButtonOne</Text>
+                    <Text style={ButtonStyles.TextOne}>search</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
@@ -46,8 +49,8 @@ function Buttons() {
 function MainHomePage() {
     return (
         <View style={MainHomePageStyles.MainContainer}>
-            {headerHomePage()}
-            {Buttons()}
+            <HeaderHomePage />
+            <Buttons />
         </View>
     )
 }
