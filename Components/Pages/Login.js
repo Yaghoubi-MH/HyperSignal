@@ -8,7 +8,6 @@ function Singup() {
     const navigation = useNavigation()
     const [UserPhoneNumber, setUserPhoneNumber] = useState("")
     const [user, setUser] = useState([])
-    // console.log(user)
     return (
         <View style={styles.Background}>
             <TextInput
@@ -21,11 +20,8 @@ function Singup() {
                     const Result = await axios.get("http:192.168.1.4/ReadUsersApi?userPhonenumber="
                          + UserPhoneNumber + "").catch((err)=>console.log(err))
                     setUser(Result.data)
-                    // console.log(Result)
-                    // console.log(user)
                 }}
             />
-             <Text style={styles.Texts}>{user[0].userPhonenumber}</Text>
             <TouchableOpacity
                 style={styles.Button}
                 onPress={() => navigation.navigate("HomePage")}>
