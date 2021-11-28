@@ -10,6 +10,9 @@ function Singup() {
     const [user, setUser] = useState([])
     return (
         <View style={styles.Background}>
+              <View style={styles.head}>
+                <Text style={styles.headt}>Login</Text>
+            </View>
             <TextInput
                 style={styles.Input}
                 keyboardType="number-pad"
@@ -34,6 +37,12 @@ const styles = StyleSheet.create({
     Background: {
         backgroundColor: "#feb444",
         height: hp('100')
+    },
+    head: {
+        backgroundColor: "#a02ab8",
+        height: hp('20'),
+        justifyContent:"center",
+        alignItems:"center"
     },
     Input: {
         width: wp("75"),
@@ -61,6 +70,10 @@ const styles = StyleSheet.create({
     },
     Texts:{
         color:"#fff"
+    },
+    headt:{
+        color:"#000",
+        fontSize:hp('5')
     }
 })
 export default Singup

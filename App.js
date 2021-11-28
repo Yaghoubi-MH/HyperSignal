@@ -6,6 +6,7 @@ import HomePage from "./Components/Pages/HomePage"
 import Search from "./Components/Pages/Search"
 import Singup from "./Components/Pages/Singup"
 import Login from "./Components/Pages/Login"
+import Start from "./Components/Pages/StartPage"
 
 const Stack = createNativeStackNavigator();
 
@@ -13,7 +14,8 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="Singup" screenOptions={{ headerShown: false }} >
+        initialRouteName="Start" screenOptions={{ headerShown: false }} >
+        <Stack.Screen name="Start" component={Start} />
         <Stack.Screen name="Singup" component={Singup} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="HomePage" component={HomePage} />
