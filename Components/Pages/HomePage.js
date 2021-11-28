@@ -26,8 +26,9 @@ function Buttons() {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
+                    onPress={()=>navigation.navigate("Singup")}
                 >
-                    <Text style={ButtonStyles.TextOne}>ButtonTwo</Text>
+                    <Text style={ButtonStyles.TextOne}>SingUp</Text>
                 </TouchableOpacity>
             </View>
             <View style={MainHomePageStyles.ButtonContainer}>
