@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, StatusBar, Button, TouchableOpacity } from "rea
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { useNavigation } from "@react-navigation/core";
 import PushNotification from "react-native-push-notification";
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function HeaderHomePage() {
     return (
@@ -26,7 +26,10 @@ function Buttons() {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
-                    onPress={()=>navigation.navigate("Singup")}
+                    onPress={()=>{
+                        AsyncStorage.removeItem("@user")
+                        navigation.navigate("Login")
+                    }}
                 >
                     <Text style={ButtonStyles.TextOne}>SingUp</Text>
                 </TouchableOpacity>
