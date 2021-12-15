@@ -1,4 +1,4 @@
-import React, { useState, useEffect,use } from "react";
+import React, { useState, useEffect, use } from "react";
 import { Text, View, TouchableOpacity, StyleSheet, TextInput, Image, ImageBackground, StatusBar } from 'react-native'
 import { heightPercentageToDP as hp, widthPercentageToDP as wp } from 'react-native-responsive-screen'
 import axios from "axios";
@@ -45,20 +45,17 @@ const Login = () => {
         setUserPhoneNumber(UserNumber)
     }
     console.log(UserPhoneNumber)
-    
-        if(user) {
-            navigation.navigate("HomePage")
-        }
-    
-    useEffect(() => {
-        const fetchUser = async () => {
-            const value = await AsyncStorage.getItem('@user')
-            setUser(value)
-            console.log("value", user)
 
-        }
-        fetchUser()
-    }, [])
+    // useEffect(() => {
+    //     const fetchUser = async () => {
+    //         const value = await AsyncStorage.getItem('@user')
+    //         setUser(value)
+    //         console.log("value", user)
+
+    //     }
+    //     fetchUser()
+    // }, [])
+
     const OnPressHandler = async () => {
         try {
             await AsyncStorage.setItem("@user", UserPhoneNumber)
@@ -68,7 +65,12 @@ const Login = () => {
             // saving error
         }
     }
-
+    // const userLogedIn = () => {
+    //     if (user) {
+    //         navigation.navigate("HomePage")
+    //     }
+    // }
+    // setTimeout(userLogedIn)
     return (
 
         < View style={{ backgroundColor: "#EFEED3" }}>
@@ -81,6 +83,8 @@ const Login = () => {
         </View >
 
     )
+
+
 }
 const LoginPageHeaderStyles = StyleSheet.create({
     ImageHeader: {
@@ -91,8 +95,8 @@ const LoginPageHeaderStyles = StyleSheet.create({
         flexDirection: "row"
     },
     Logo: {
-        width: wp(17.86),
-        height: hp(10.04),
+        // width: wp(17.86),
+        // height: hp(10.04),
         marginTop: wp(5),
         marginLeft: hp(3),
     },
@@ -101,7 +105,7 @@ const LoginPageHeaderStyles = StyleSheet.create({
         fontSize: hp(3.74),
         fontWeight: "bold",
         marginLeft: wp(20),
-        marginTop: hp(5.5)
+        marginTop: hp(4)
     },
 })
 const LoginPageMainContainerStyles = StyleSheet.create({
