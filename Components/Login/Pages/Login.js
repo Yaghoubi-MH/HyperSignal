@@ -46,31 +46,16 @@ const Login = () => {
     }
     console.log(UserPhoneNumber)
 
-    // useEffect(() => {
-    //     const fetchUser = async () => {
-    //         const value = await AsyncStorage.getItem('@user')
-    //         setUser(value)
-    //         console.log("value", user)
-
-    //     }
-    //     fetchUser()
-    // }, [])
-
     const OnPressHandler = async () => {
         try {
             await AsyncStorage.setItem("@user", UserPhoneNumber)
-            axios.get("http:192.168.1.5/NewUserApi?userPhonenumber=" + UserPhoneNumber + "")
+            axios.get("http:192.168.1.8/NewUserApi?userPhonenumber=" + UserPhoneNumber + "")
             navigation.navigate("HomePage")
         } catch (e) {
-            // saving error
+            
         }
     }
-    // const userLogedIn = () => {
-    //     if (user) {
-    //         navigation.navigate("HomePage")
-    //     }
-    // }
-    // setTimeout(userLogedIn)
+
     return (
 
         < View style={{ backgroundColor: "#EFEED3" }}>

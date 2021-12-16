@@ -3,9 +3,10 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import HomePage from "./Components/Pages/HomePage"
+import HomePage from "./Components/Home/Pages/HomePage"
 import Search from "./Components/Pages/Search"
 import Login from "./Components/Login/Pages/Login"
+import Filter from "./Components/Home/Pages/Filter"
 
 
 const Stack = createNativeStackNavigator();
@@ -28,7 +29,6 @@ function App() {
   }
   fetchUser()
   if (user == undefined) {
-    // We haven't finished checking for the token yet
     return (
       <NavigationContainer>
             <Stack.Screen name="Search" component={Search} />
@@ -44,7 +44,7 @@ function App() {
         {user ? (
           <>
             <Stack.Screen name="HomePage" component={HomePage} />
-            <Stack.Screen name="Search" component={Search} />
+            <Stack.Screen name="Filter" component={Filter} />
             <Stack.Screen name="Login" component={Login} />
           </>
 
