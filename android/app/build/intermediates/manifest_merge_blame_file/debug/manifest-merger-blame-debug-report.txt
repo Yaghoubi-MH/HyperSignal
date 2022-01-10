@@ -9,11 +9,11 @@
 9        android:targetSdkVersion="30" />
 10
 11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-11-->F:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:5:5-77
-11-->F:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:5:22-75
+11-->G:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:5:5-77
+11-->G:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:5:22-75
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:4:5-67
-12-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:4:22-64
+12-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:4:5-67
+12-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:4:22-64
 13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 13-->[com.facebook.flipper:flipper:0.99.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\2f5725507f1929c6ddf8255f0bef77bd\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:5-76
 13-->[com.facebook.flipper:flipper:0.99.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\2f5725507f1929c6ddf8255f0bef77bd\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:22-73
@@ -81,27 +81,27 @@
 37-->[me.leolin:ShortcutBadger:1.1.22] C:\Users\MohammadHassan\.gradle\caches\transforms-3\f140fdee6722ae5a00b8b7c77573f2f3\transformed\jetified-ShortcutBadger-1.1.22\AndroidManifest.xml:50:22-86
 38
 39    <application
-39-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:10:5-46:19
+39-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:10:5-46:19
 40        android:name="com.hypersignal.MainApplication"
-40-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:11:7-38
+40-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:11:7-38
 41        android:allowBackup="false"
-41-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:15:7-34
+41-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:15:7-34
 42        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 42-->[androidx.core:core:1.5.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\5646db46e2cfb43e7b3d42f3054c498c\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 43        android:debuggable="true"
 44        android:icon="@mipmap/ic_launcher"
-44-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:13:7-41
+44-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:13:7-41
 45        android:label="@string/app_name"
-45-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:12:7-39
+45-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:12:7-39
 46        android:roundIcon="@mipmap/ic_launcher_round"
-46-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:14:7-52
+46-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:14:7-52
 47        android:theme="@style/AppTheme"
-47-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:16:7-38
+47-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:16:7-38
 48        android:usesCleartextTraffic="true" >
-48-->F:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:8:9-44
+48-->G:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:8:9-44
 49        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-49-->F:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:11:9-86
-49-->F:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:11:19-83
+49-->G:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:11:9-86
+49-->G:\android\projects\HyperSignal\android\app\src\debug\AndroidManifest.xml:11:19-83
 50        <!--  -->
 51        <!--
 52 <meta-data  android:name="com.dieam.reactnativepushnotification.notification_foreground"
@@ -126,26 +126,26 @@
 71        -->
 72        <!--  -->
 73        <activity
-73-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:35:7-45:18
+73-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:35:7-45:18
 74            android:name="com.hypersignal.MainActivity"
-74-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:36:9-37
+74-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:36:9-37
 75            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-75-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:38:9-86
+75-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:38:9-86
 76            android:label="@string/app_name"
-76-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:37:9-41
+76-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:37:9-41
 77            android:launchMode="singleTask"
-77-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:39:9-40
+77-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:39:9-40
 78            android:windowSoftInputMode="adjustResize" >
-78-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:40:9-51
+78-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:40:9-51
 79            <intent-filter>
-79-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:41:9-44:25
+79-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:41:9-44:25
 80                <action android:name="android.intent.action.MAIN" />
-80-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:42:13-65
-80-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:42:21-62
+80-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:42:13-65
+80-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:42:21-62
 81
 82                <category android:name="android.intent.category.LAUNCHER" />
-82-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:43:13-73
-82-->F:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:43:23-70
+82-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:43:13-73
+82-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:43:23-70
 83            </intent-filter>
 84        </activity>
 85

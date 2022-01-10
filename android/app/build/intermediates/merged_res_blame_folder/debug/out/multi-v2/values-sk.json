@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\android\\projects\\HyperSignal\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
+            "outputFile": "G:\\android\\projects\\HyperSignal\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sk\\values-sk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\MohammadHassan\\.gradle\\caches\\transforms-3\\b0526a1dc337b9c7a190ce38007e5e31\\transformed\\jetified-play-services-basement-17.0.0\\res\\values-sk\\values.xml",
