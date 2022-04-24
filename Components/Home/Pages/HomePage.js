@@ -4,6 +4,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from "react-nat
 import { useNavigation } from "@react-navigation/core";
 import PushNotification from "react-native-push-notification";
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { VictoryCandlestick } from "victory-native";
 
 function HeaderHomePage() {
     return (
@@ -27,23 +28,27 @@ function Buttons() {
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
-                >
-                    <Text style={ButtonStyles.TextOne}>دوم</Text>
+                    onPress={() => navigation.navigate("Test")}
+                    >
+                    <Text style={ButtonStyles.TextOne}>چارت</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
-                >
-                    <Text style={ButtonStyles.TextOne}>سوم</Text>
+                    onPress={() => navigation.navigate("Portfolio")}
+                    >
+                    <Text style={ButtonStyles.TextOne}>پرتفولیو</Text>
                 </TouchableOpacity>
             </View>
             <View style={MainHomePageStyles.ButtonContainer}>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
+                    onPress={() => navigation.navigate("nemodar")}
                 >
-                    <Text style={ButtonStyles.TextOne}>چهارم</Text>
+                    <Text style={ButtonStyles.TextOne}>اخبار</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
+                    onPress={() => navigation.navigate("gaugef")}
                 >
                     <Text style={ButtonStyles.TextOne}>پنجم</Text>
                 </TouchableOpacity>
@@ -117,7 +122,7 @@ const MainHomePageStyles = StyleSheet.create({
 
 const ButtonStyles = StyleSheet.create({
     ButtonOne: {
-        backgroundColor: "#feb000",
+        backgroundColor: "#fff",
         width: 100,
         height: 100,
         borderRadius: 25,
@@ -126,7 +131,7 @@ const ButtonStyles = StyleSheet.create({
 
     },
     ButtonExit: {
-        backgroundColor: "#feb000",
+        backgroundColor: "#fff",
         width: 372,
         height: 62,
         borderRadius: 50,

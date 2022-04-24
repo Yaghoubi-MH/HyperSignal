@@ -10,13 +10,20 @@ buildscript {
         compileSdkVersion = 30
         targetSdkVersion = 30
         ndkVersion = "21.4.7075529"
+        
     }
     repositories {
         google()
+        jcenter()
         mavenCentral()
+    //     jcenter {
+    //     url "http://jcenter.bintray.com/"
+    // }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:4.2.2")
+        // classpath('androidx.annotation:annotation:1.0.0')
+        // classpath("com.android.tools.build:gradle:3.3.1")
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -24,6 +31,7 @@ buildscript {
 
 allprojects {
     repositories {
+        google()
         mavenCentral()
         mavenLocal()
         maven {
@@ -35,7 +43,10 @@ allprojects {
             url("$rootDir/../node_modules/jsc-android/dist")
         }
 
-        google()
+        // google()
         maven { url 'https://www.jitpack.io' }
+    //     jcenter {
+    //         url "http://jcenter.bintray.com/"
+    // }
     }
 }

@@ -1,69 +1,78 @@
-import React, { useState, useEffect } from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import React, {useState, useEffect} from 'react';
+import { View, StyleSheet, Text, LogBox } from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import HomePage from "./Components/Home/Pages/HomePage"
-import Search from "./Components/Pages/Search"
-import Login from "./Components/Login/Pages/Login"
-import Filter from "./Components/Home/Pages/Filter"
-
+import HomePage from './Components/Home/Pages/HomePage';
+import Search from './Components/Pages/Search';
+import Login from './Components/Login/Pages/Login';
+import Filter from './Components/Home/Pages/Filter';
+import Test from './Components/Home/Pages/test';
+import candel from './Components/Home/Pages/candel';
+import Portfolio from './Components/Home/Pages/Portfolio';
+import nemodar from './Components/Home/Pages/nemodar';
+import news from './Components/Home/Pages/news';
+import gauge from './Components/Home/Pages/Gauge';
+import gaugef from './Components/Home/Pages/Gaugef';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
-  const [user, setUser] = useState()
+  LogBox.ignoreLogs(['Remote debugger']);
+  const [user, setUser] = useState();
 
   const fetchUser = async () => {
-    const value = await AsyncStorage.getItem('@user')
+    const value = await AsyncStorage.getItem('@user');
     if (value !== null) {
-      setUser(true)
-    }
-    else {
-      setUser(false)
+      setUser(true);
+    } else {
+      setUser(false);
     }
 
-    console.log("value", user)
-    console.log("values", value)
-
-  }
-  fetchUser()
+    console.log('value', user);
+    console.log('values', value);
+  };
+  fetchUser();
   if (user == undefined) {
     return (
       <NavigationContainer>
-            <Stack.Screen name="Search" component={Search} />
+        <Stack.Screen name="Search" component={Search} />
       </NavigationContainer>
     );
   }
 
   return (
     <NavigationContainer>
-
-      <Stack.Navigator
-        screenOptions={{ headerShown: false }} >
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         {user ? (
           <>
             <Stack.Screen name="HomePage" component={HomePage} />
             <Stack.Screen name="Filter" component={Filter} />
+            <Stack.Screen name="Test" component={Test} />
+            <Stack.Screen name="Portfolio" component={Portfolio} />
+            <Stack.Screen name="candel" component={candel} />
+            <Stack.Screen name="nemodar" component={nemodar} />
+            <Stack.Screen name="news" component={news} />
+            <Stack.Screen name="gauge" component={gauge} />
+            <Stack.Screen name="gaugef" component={gaugef} />
             <Stack.Screen name="Login" component={Login} />
           </>
-
         ) : (
-
           <>
             <Stack.Screen name="Login" component={Login} />
             <Stack.Screen name="HomePage" component={HomePage} />
+            <Stack.Screen name="Filter" component={Filter} />
           </>
-        )
-        }
+        )}
       </Stack.Navigator>
-      {/* <Stack.Navigator
+      {/* <Stack.Navigat
+or
         initialRouteName={user ? ("Login": "HomePage")   } screenOptions={{ headerShown: false }} >
       
-
     </Stack.Navigator> */}
-    </NavigationContainer >
-  )
+    </NavigationContainer>
+  );
 }
 
-export default App
+export default App;

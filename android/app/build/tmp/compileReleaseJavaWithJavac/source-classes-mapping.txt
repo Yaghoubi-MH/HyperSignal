@@ -1,0 +1,9 @@
+com/hypersignal/MainActivity.java
+ com.hypersignal.MainActivity
+com/hypersignal/BuildConfig.java
+ com.hypersignal.BuildConfig
+com/hypersignal/MainApplication.java
+ com.hypersignal.MainApplication
+ com.hypersignal.MainApplication$1
+com/facebook/react/PackageList.java
+ com.facebook.react.PackageList
