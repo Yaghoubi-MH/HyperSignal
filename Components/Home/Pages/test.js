@@ -136,7 +136,7 @@ function Example() {
       onPress={() => {
         navigation.navigate('candel');
       }}>
-      <Text style={styles.title}>{title}</Text>
+      <Text allowFontScaling={false} style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
   const renderItem = ({item}) => <Item title={item.CompanySymbol} />;

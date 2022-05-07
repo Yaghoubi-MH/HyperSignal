@@ -1,4 +1,7 @@
-#Mon Apr 11 22:44:56 IRDT 2022
+#Wed Apr 27 12:58:49 IRDT 2022
 base.0=G\:\\android\\projects\\HyperSignal\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=G\:\\android\\projects\\HyperSignal\\android\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex

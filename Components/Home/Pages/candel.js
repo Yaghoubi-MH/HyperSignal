@@ -58,49 +58,52 @@ function Example() {
       }
       setData(z);
     };
-    f()
+    f();
   }, []);
 
   return (
     <View style={styles.container}>
       <View style={styles.ma}>
-        <Text style={styles.maT}>رمپنا</Text>
+        <Text allowFontScaling={false}style={styles.maT}>رمپنا</Text>
       </View>
-      <VictoryChart
-        containerComponent={
-          <VictoryZoomContainer zoomDomain={{x: [1, 51], y: [12000, 15000]}} />
-        }
-        theme={VictoryTheme.material}
-        domainPadding={{x: 25}}
-        scale={{x: 'time'}}>
-        <VictoryAxis tickFormat={t => `${t.getDate()}/${t.getMonth()}`} />
-        <VictoryAxis dependentAxis />
-        <VictoryCandlestick
-          candleColors={{positive: '#00b000', negative: '#c43a31'}}
-          data={data}
-        />
-      </VictoryChart>
-      <View style={styles.xContainer}>
-        <View style={styles.xv}>
-          <Text style={styles.xT}> 16,700 : خرید</Text>
-        </View>
-        <View style={styles.xv}>
-          <Text style={styles.xT}> 16,700 : معامله</Text>
-        </View>
+      <View style={{backgroundColor: '#fff'}}>
+        <VictoryChart
+          containerComponent={
+            <VictoryZoomContainer
+              zoomDomain={{x: [1, 51], y: [12000, 15000]}}
+            />
+          }
+          theme={VictoryTheme.material}
+          domainPadding={{x: 25}}
+          scale={{x: 'time'}}>
+          <VictoryAxis tickFormat={t => `${t.getDate()}/${t.getMonth()}`} />
+          <VictoryAxis dependentAxis />
+          <VictoryCandlestick
+            candleColors={{positive: '#00b000', negative: '#c43a31'}}
+            data={data}
+          />
+        </VictoryChart>
       </View>
       <View style={styles.xContainer}>
         <View style={styles.xv}>
-          <Text style={styles.xT}> 16,670 : اولین</Text>
+          <Text allowFontScaling={false} style={styles.xT}> 16,700 : خرید</Text>
         </View>
         <View style={styles.xv}>
-          <Text style={styles.xT}> 16,740 : پایانی</Text>
+          <Text allowFontScaling={false} style={styles.xT}> 16,700 : معامله</Text>
         </View>
       </View>
       <View style={styles.xContainer}>
         <View style={styles.xv}>
-          <Text style={styles.xT}> 	6.626 M : حجم معاملات</Text>
+          <Text allowFontScaling={false} style={styles.xT}> 16,670 : اولین</Text>
         </View>
-        
+        <View style={styles.xv}>
+          <Text allowFontScaling={false} style={styles.xT}> 16,740 : پایانی</Text>
+        </View>
+      </View>
+      <View style={styles.xContainer}>
+        <View style={styles.xv}>
+          <Text allowFontScaling={false} style={styles.xT}> 6.626 M : حجم معاملات</Text>
+        </View>
       </View>
     </View>
   );
@@ -122,25 +125,25 @@ const styles = StyleSheet.create({
     fontSize: 32,
     color: '#000',
   },
-  xContainer:{
-    marginTop:20,
+  xContainer: {
+    marginTop: 20,
     flexDirection: 'row',
     justifyContent: 'center',
   },
-  ma:{
-    backgroundColor:"#fff",
+  ma: {
+    backgroundColor: '#fff',
     alignItems: 'center',
-  
   },
-  maT:{
+  maT: {
     fontSize: 40,
-    color: "#000"
+    color: '#000',
   },
-  xT:{
-    fontSize:25,
+  xT: {
+    fontSize: 25,
+    color: '#fff',
   },
-  xv:{
-    padding:10
-  }
+  xv: {
+    padding: 10,
+  },
 });
 export default Example;

@@ -23,7 +23,7 @@ import axios from 'axios';
 const HeaderPage = () => {
   return (
     <View style={HeaderPageStyles.Container}>
-      <Text style={HeaderPageStyles.HeaderText}>فیلتر</Text>
+      <Text allowFontScaling={false} style={HeaderPageStyles.HeaderText}>فیلتر</Text>
     </View>
   );
 };
@@ -38,7 +38,9 @@ const MainContent = props => {
           <Text style={MainContentStyles.QuestionMarkerText}>?</Text>
         </TouchableOpacity> */}
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>میزان ریسک</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            میزان ریسک
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity
@@ -49,120 +51,226 @@ const MainContent = props => {
           <TouchableOpacity
             style={props.LowRiskButtonColor}
             onPress={props.LowRiskButtonOnPress}>
-            <Text style={MainContentStyles.LowRiskText}>کم ریسک</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              کم ریسک
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={props.MediumRiskColor}
             onPress={props.OnPressHandlerMediumRisk}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity
             style={props.HighRiskColor}
             onPress={props.OnPressHandlerHighRisk}>
-            <Text style={MainContentStyles.LowRiskText}>پر ریسک</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              پر ریسک
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={props.VeryHighRiskColor}
             onPress={props.OnPressHandlerVeryHighRisk}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی پر ریسک</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی پر ریسک
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>بازده</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            بازده
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.bvl} onPress={props.OnPressHandlerbvl}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.ngl} onPress={props.OnPressHandlerngl}>
-            <Text style={MainContentStyles.LowRiskText}>کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.ngm} onPress={props.OnPressHandlerngm}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.ngh} onPress={props.OnPressHandlerngh}>
-            <Text style={MainContentStyles.LowRiskText}>زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              زیاد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={props.ngvh}
             onPress={props.OnPressHandlerngvh}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی زیاد
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>نقد شوندگی</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            نقد شوندگی
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity
             style={props.ngvl}
             onPress={props.OnPressHandlerngvl}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.bl} onPress={props.OnPressHandlerbl}>
-            <Text style={MainContentStyles.LowRiskText}>کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.bm} onPress={props.OnPressHandlerbm}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.bh} onPress={props.OnPressHandlerbh}>
-            <Text style={MainContentStyles.LowRiskText}>زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              زیاد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.bvh} onPress={props.OnPressHandlerbvh}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی زیاد
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>ارزندگی</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            ارزندگی
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.avl} onPress={props.OnPressHandleravl}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.al} onPress={props.OnPressHandleral}>
-            <Text style={MainContentStyles.LowRiskText}>کم</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              کم
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.am} onPress={props.OnPressHandleram}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.ah} onPress={props.OnPressHandlerah}>
-            <Text style={MainContentStyles.LowRiskText}>زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              زیاد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.avh} onPress={props.OnPressHandleravh}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی زیاد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی زیاد
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>تابلو خوانی</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            تابلو خوانی
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.tvb} onPress={props.OnPressHandlertvb}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی بد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی بد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.tb} onPress={props.OnPressHandlertb}>
-            <Text style={MainContentStyles.LowRiskText}>بد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              بد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.tm} onPress={props.OnPressHandlertm}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.tg} onPress={props.OnPressHandlertg}>
-            <Text style={MainContentStyles.LowRiskText}>خوب</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خوب
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.tvg} onPress={props.OnPressHandlertvg}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی خوب</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی خوب
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskTextContainer}>
-          <Text style={MainContentStyles.LowRiskText}>وضعیت تکنیکال</Text>
+          <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+            وضعیت تکنیکال
+          </Text>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity
@@ -171,38 +279,55 @@ const MainContent = props => {
             <Text style={MainContentStyles.LowRiskText}>خیلی بد</Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.vtb} onPress={props.OnPressHandlervtb}>
-            <Text style={MainContentStyles.LowRiskText}>بد</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              بد
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity style={props.vtm} onPress={props.OnPressHandlervtm}>
-            <Text style={MainContentStyles.LowRiskText}>متوسط</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              متوسط
+            </Text>
           </TouchableOpacity>
         </View>
         <View style={MainContentStyles.RiskContainer}>
           <TouchableOpacity style={props.vtg} onPress={props.OnPressHandlervtg}>
-            <Text style={MainContentStyles.LowRiskText}>خوب</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خوب
+            </Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={props.vtvg}
             onPress={props.OnPressHandlervtvg}>
-            <Text style={MainContentStyles.LowRiskText}>خیلی خوب</Text>
+            <Text
+              allowFontScaling={false}
+              style={MainContentStyles.LowRiskText}>
+              خیلی خوب
+            </Text>
           </TouchableOpacity>
         </View>
       </View>
       <TouchableOpacity
         style={MainContentStyles.ConfirmButton}
         onPress={props.QuestionOnPress}>
-        <Text style={MainContentStyles.LowRiskText}>اعمال فیلتر</Text>
+        <Text allowFontScaling={false} style={MainContentStyles.LowRiskText}>
+          اعمال فیلتر
+        </Text>
       </TouchableOpacity>
     </ScrollView>
   );
 };
 const Modal = props => {
-  const ok = 'شپنا و شبندر و فولاد و خساپا';
   const notok = 'فیلتر مورد نظر را انتخاب کنید';
   return (
     <View pointerEvents={props.Pointer} style={props.OKButtonStyles}>
       <View style={Modalstyles.Container}>
-        <Text style={Modalstyles.MainText}>
+        <Text allowFontScaling={false} style={Modalstyles.MainText}>
           {props.isSelectedVeryLowriskButton ||
           props.isSelectedLowriskButton ||
           props.isSelectedMediumriskButton ||
@@ -232,9 +357,21 @@ const Modal = props => {
           props.isSelectedvtb ||
           props.isSelectedvtm ||
           props.isSelectedvtg ||
-          props.isSelectedvtvg
-            ? ok
-            : notok}
+          props.isSelectedvtvg ? (
+            <View >
+              <View style={{borderBottomWidth:2,width:300,padding:5}}>
+                <Text allowFontScaling={false} style={{color: '#000', fontSize: 30,}}>خساپا</Text>
+              </View>
+              <View style={{borderBottomWidth:2,width:300,padding:5}}>
+                <Text allowFontScaling={false} style={{color: '#000', fontSize: 30}}>فملی</Text>
+              </View>
+              <View style={{borderBottomWidth:2,width:300,padding:5}}>
+                <Text allowFontScaling={false} style={{color: '#000', fontSize: 30}}>شبندر</Text>
+              </View>
+            </View>
+          ) : (
+            notok
+          )}
         </Text>
         <TouchableOpacity
           onPress={props.OKButtonOnPress}
@@ -824,11 +961,12 @@ const Modalstyles = StyleSheet.create({
   Container: {
     backgroundColor: '#fff',
     width: 300,
-    height: 300,
+    height: 440,
     marginTop: 200,
     marginLeft: 55,
     borderRadius: 25,
     alignItems: 'center',
+    position:'relative'
   },
   Buttons: {
     height: 50,

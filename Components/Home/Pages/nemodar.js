@@ -31,6 +31,11 @@ function Example() {
   return (
     <View style={styles.container}>
       <View style={{backgroundColor: '#FFF'}}>
+        <Text
+          allowFontScaling={false}
+          style={{color: '#000', fontSize: 25, alignSelf: 'center'}}>
+          نمودار شاخص کل در شش ماه اخیر
+        </Text>
         <VictoryChart>
           <VictoryLine
             domain={{x: [0, 13], y: [1, 1.7]}}
@@ -57,9 +62,21 @@ function Example() {
           />
         </VictoryChart>
       </View>
+      <View style={{backgroundColor: '#fff', marginTop: 20}}>
+        <Text
+          allowFontScaling={false}
+          style={{
+            color: '#000',
+            fontSize: 35,
+            alignSelf: 'center',
+            fontWeight: 'bold',
+          }}>
+          اخبار روز
+        </Text>
+      </View>
       <View style={{alignItems: 'center', marginTop: 20}}>
         <TouchableOpacity
-          onPress={()=> navigation.navigate('news')}
+          onPress={() => navigation.navigate('news')}
           style={{
             width: 300,
             backgroundColor: '#fff',
@@ -69,12 +86,14 @@ function Example() {
             borderRadius: 50,
             marginTop: 20,
           }}>
-          <Text style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
+          <Text
+            allowFontScaling={false}
+            style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
             شاخص بورس بدون تغییر ماند
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=> navigation.navigate('news')}
+          onPress={() => navigation.navigate('news')}
           style={{
             width: 300,
             backgroundColor: '#fff',
@@ -84,12 +103,14 @@ function Example() {
             borderRadius: 50,
             marginTop: 20,
           }}>
-          <Text style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
-          ۶ سیگنال جدید برای بورس
+          <Text
+            allowFontScaling={false}
+            style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
+            ۶ سیگنال جدید برای بورس
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=> navigation.navigate('news')}
+          onPress={() => navigation.navigate('news')}
           style={{
             width: 300,
             backgroundColor: '#fff',
@@ -99,12 +120,14 @@ function Example() {
             borderRadius: 50,
             marginTop: 20,
           }}>
-          <Text style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
+          <Text
+            allowFontScaling={false}
+            style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
             سه شنبه هیجانی بورس
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=> navigation.navigate('news')}
+          onPress={() => navigation.navigate('news')}
           style={{
             width: 300,
             backgroundColor: '#fff',
@@ -114,13 +137,19 @@ function Example() {
             borderRadius: 50,
             marginTop: 20,
           }}>
-          <Text style={{fontSize: 20, color: '#000', fontWeight: 'bold',textAlign:'center'}}>
-          استعداد شرکت‌های دولتی‌ در خلق زیان بورسی
-
+          <Text
+            allowFontScaling={false}
+            style={{
+              fontSize: 20,
+              color: '#000',
+              fontWeight: 'bold',
+              textAlign: 'center',
+            }}>
+            استعداد شرکت‌های دولتی‌ در خلق زیان بورسی
           </Text>
         </TouchableOpacity>
         <TouchableOpacity
-        onPress={()=> navigation.navigate('news')}
+          onPress={() => navigation.navigate('news')}
           style={{
             width: 300,
             backgroundColor: '#fff',
@@ -130,7 +159,9 @@ function Example() {
             borderRadius: 50,
             marginTop: 20,
           }}>
-          <Text style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
+          <Text
+            allowFontScaling={false}
+            style={{fontSize: 20, color: '#000', fontWeight: 'bold'}}>
             زیان سهامداران بورس کی جبران می‌شود؟
           </Text>
         </TouchableOpacity>

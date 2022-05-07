@@ -20,7 +20,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const LoginPageMainContainer = props => {
   return (
     <View>
-      <Text style={LoginPageMainContainerStyles.PhoneNumberText}>
+      <Text allowFontScaling={false} style={LoginPageMainContainerStyles.PhoneNumberText}>
         شماره همراه خود را وارد کنید
       </Text>
       <TextInput
@@ -28,6 +28,7 @@ const LoginPageMainContainer = props => {
         style={LoginPageMainContainerStyles.UserInput}
         placeholder="e.g. 09121234567"
         keyboardType="numeric"
+        allowFontScaling={false}
         placeholderTextColor={'#555'}
       />
 

@@ -15,8 +15,6 @@ import java.util.ArrayList;
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
-// react-native-haptic-feedback
-import com.mkuczera.RNReactNativeHapticFeedbackPackage;
 // react-native-push-notification
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 // react-native-reanimated
@@ -76,7 +74,6 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
       new RNGestureHandlerPackage(),
-      new RNReactNativeHapticFeedbackPackage(),
       new ReactNativePushNotificationPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),

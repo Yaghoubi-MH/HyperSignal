@@ -87,7 +87,7 @@
 43        android:allowBackup="false"
 43-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:15:7-34
 44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-44-->[androidx.core:core:1.1.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\2780a7d58323a095a84203f45c645c6e\transformed\core-1.1.0\AndroidManifest.xml:24:18-86
+44-->[androidx.core:core:1.6.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\5efa136d6b7a2c594211658eacead3c1\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
 45        android:icon="@mipmap/ic_launcher"
 45-->G:\android\projects\HyperSignal\android\app\src\main\AndroidManifest.xml:13:7-41
 46        android:label="@string/app_name"

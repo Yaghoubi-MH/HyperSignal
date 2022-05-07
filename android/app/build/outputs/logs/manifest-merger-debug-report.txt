@@ -10,7 +10,6 @@ MERGED from [com.facebook.flipper:flipper-network-plugin:0.99.0] C:\Users\Mohamm
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.99.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\e3a733608d857c466939da27af54ba77\transformed\jetified-flipper-fresco-plugin-0.99.0\AndroidManifest.xml:8:1-15:12
 MERGED from [:react-native-async-storage_async-storage] G:\android\projects\HyperSignal\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-gesture-handler] G:\android\projects\HyperSignal\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-haptic-feedback] G:\android\projects\HyperSignal\node_modules\react-native-haptic-feedback\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-push-notification] G:\android\projects\HyperSignal\node_modules\react-native-push-notification\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-safe-area-context] G:\android\projects\HyperSignal\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:react-native-screens] G:\android\projects\HyperSignal\node_modules\react-native-screens\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -227,8 +226,6 @@ MERGED from [:react-native-async-storage_async-storage] G:\android\projects\Hype
 MERGED from [:react-native-async-storage_async-storage] G:\android\projects\HyperSignal\node_modules\@react-native-async-storage\async-storage\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] G:\android\projects\HyperSignal\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-gesture-handler] G:\android\projects\HyperSignal\node_modules\react-native-gesture-handler\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-haptic-feedback] G:\android\projects\HyperSignal\node_modules\react-native-haptic-feedback\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-haptic-feedback] G:\android\projects\HyperSignal\node_modules\react-native-haptic-feedback\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-push-notification] G:\android\projects\HyperSignal\node_modules\react-native-push-notification\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-push-notification] G:\android\projects\HyperSignal\node_modules\react-native-push-notification\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-safe-area-context] G:\android\projects\HyperSignal\node_modules\react-native-safe-area-context\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
@@ -413,10 +410,6 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.99.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\2f5725507f1929c6ddf8255f0bef77bd\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.99.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\2f5725507f1929c6ddf8255f0bef77bd\transformed\jetified-flipper-0.99.0\AndroidManifest.xml:16:22-73
-uses-permission#android.permission.VIBRATE
-ADDED from [:react-native-haptic-feedback] G:\android\projects\HyperSignal\node_modules\react-native-haptic-feedback\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-66
-	android:name
-		ADDED from [:react-native-haptic-feedback] G:\android\projects\HyperSignal\node_modules\react-native-haptic-feedback\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-messaging:21.1.0] C:\Users\MohammadHassan\.gradle\caches\transforms-3\a964426ded22db375c824cf03e4f987d\transformed\jetified-firebase-messaging-21.1.0\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\MohammadHassan\.gradle\caches\transforms-3\a0e40bdc1ba615c480eeb4e284f3d2c5\transformed\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79

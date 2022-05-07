@@ -9,7 +9,7 @@ import { VictoryCandlestick } from "victory-native";
 function HeaderHomePage() {
     return (
         <View style={headerStyles.HeaderContainer}>
-            <Text style={headerStyles.HeaderText}>هایپر سیگنال</Text>
+            <Text allowFontScaling={false} style={headerStyles.HeaderText}>هایپر سیگنال</Text>
             <Image style={headerStyles.Shape} source={require("../Images/Shape.png")} />
         </View>
     )
@@ -24,19 +24,19 @@ function Buttons() {
                     style={ButtonStyles.ButtonOne}
                     onPress={() => navigation.navigate("Filter")}
                 >
-                    <Text style={ButtonStyles.TextOne}>فیلتر</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextOne}>فیلتر</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                     onPress={() => navigation.navigate("Test")}
                     >
-                    <Text style={ButtonStyles.TextOne}>چارت</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextOne}>چارت</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                     onPress={() => navigation.navigate("Portfolio")}
                     >
-                    <Text style={ButtonStyles.TextOne}>پرتفولیو</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextOne}>پرتفولیو</Text>
                 </TouchableOpacity>
             </View>
             <View style={MainHomePageStyles.ButtonContainer}>
@@ -44,18 +44,19 @@ function Buttons() {
                     style={ButtonStyles.ButtonOne}
                     onPress={() => navigation.navigate("nemodar")}
                 >
-                    <Text style={ButtonStyles.TextOne}>اخبار</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextOne}>نمای بازار</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
                     onPress={() => navigation.navigate("gaugef")}
                 >
-                    <Text style={ButtonStyles.TextOne}>پنجم</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextfOne}>تحلیل سهم</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     style={ButtonStyles.ButtonOne}
+                    onPress={() => navigation.navigate("notif")}
                 >
-                    <Text style={ButtonStyles.TextOne}>ششم</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextSne}>نوتیفیکیشن</Text>
                 </TouchableOpacity>
             </View>
             <View style={MainHomePageStyles.Exit}>
@@ -66,7 +67,7 @@ function Buttons() {
                         navigation.navigate("Login")
                     }}
                 >
-                    <Text style={ButtonStyles.TextOne}>خروج</Text>
+                    <Text allowFontScaling={false} style={ButtonStyles.TextOne}>خروج</Text>
                 </TouchableOpacity>
             </View>
 
@@ -141,7 +142,19 @@ const ButtonStyles = StyleSheet.create({
     },
     TextOne: {
         color: "#000",
-        fontSize: hp(3.44),
+        fontSize: hp(3),
+        fontWeight: "bold"
+
+    },
+    TextfOne: {
+        color: "#000",
+        fontSize: hp(2.65),
+        fontWeight: "bold"
+
+    },
+    TextSne: {
+        color: "#000",
+        fontSize: hp(2.6),
         fontWeight: "bold"
 
     }

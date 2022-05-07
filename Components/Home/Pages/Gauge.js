@@ -30,6 +30,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -47,16 +48,19 @@ function Example() {
           showIndicator
         />
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
-            paddingLeft: 8,
+            paddingLeft: 7,
             paddingTop: 15,
             paddingRight: 95,
             color: '#000',
           }}>
           خیلی خوب
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text
+          allowFontScaling={false}
+          style={{fontSize: 19, paddingRight: 10, color: '#000'}}>
           بنیادی
         </Text>
       </View>
@@ -71,6 +75,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -88,6 +93,7 @@ function Example() {
           showIndicator
         />
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingLeft: 8,
@@ -97,7 +103,7 @@ function Example() {
           }}>
           خیلی{'\n'}کم ریسک
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text allowFontScaling={false} style={{fontSize: 20, paddingRight: 10, color: '#000'}}>
           ریسک
         </Text>
       </View>
@@ -112,6 +118,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -129,6 +136,7 @@ function Example() {
           showIndicator
         />
         <Text
+          allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingLeft: 8,
@@ -138,7 +146,7 @@ function Example() {
           }}>
           خیلی خوب
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text allowFontScaling={false} style={{fontSize: 20, paddingRight: 10, color: '#000'}}>
           نقد شوندگی
         </Text>
       </View>
@@ -153,6 +161,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -170,6 +179,7 @@ function Example() {
           showIndicator
         />
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingLeft: 8,
@@ -179,7 +189,7 @@ function Example() {
           }}>
           خیلی خوب
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text allowFontScaling={false} style={{fontSize: 20, paddingRight: 10, color: '#000'}}>
           تکنیکال
         </Text>
       </View>
@@ -194,6 +204,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -211,6 +222,7 @@ function Example() {
           showIndicator
         />
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingLeft: 8,
@@ -220,7 +232,7 @@ function Example() {
           }}>
           خیلی خوب
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text allowFontScaling={false} style={{fontSize: 20, paddingRight: 10, color: '#000'}}>
           ارزندگی
         </Text>
       </View>
@@ -235,6 +247,7 @@ function Example() {
           alignItems: 'center',
         }}>
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingRight: 8,
@@ -252,6 +265,7 @@ function Example() {
           showIndicator
         />
         <Text
+        allowFontScaling={false}
           style={{
             fontSize: 18,
             paddingLeft: 8,
@@ -261,7 +275,7 @@ function Example() {
           }}>
           خیلی خوب
         </Text>
-        <Text style={{fontSize: 25, paddingRight: 10, color: '#000'}}>
+        <Text allowFontScaling={false} style={{fontSize: 20, paddingRight: 10, color: '#000'}}>
           تابلو خوانی
         </Text>
       </View>

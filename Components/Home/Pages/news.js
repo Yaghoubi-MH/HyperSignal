@@ -28,11 +28,11 @@ function Example() {
           justifyContent: 'center',
           alignItems: 'center',
         }}>
-        <Text style={{color: '#000',fontSize:25,textAlign:'center',fontWeight:'bold'}}>
+        <Text allowFontScaling={false} style={{color: '#000',fontSize:25,textAlign:'center',fontWeight:'bold'}}>
           شاخص بورس بدون تغییر ماند/ بازگشایی فولاد بی‌اثر بود
         </Text>
       </View>
-      <Text style={{color: '#fff',fontSize:20,marginTop:30,textAlign:"center"}}>
+      <Text allowFontScaling={false} style={{color: '#fff',fontSize:20,marginTop:30,textAlign:"center"}}>
       به گزارش تجارت‌نیوز، بورس امروز کاهش ۸۱۸  واحدی را تجربه کرد و در نهایت به سطح یک میلیون و ۵۱۲ هزار واحد رسید.
 
 امروز شرکت فولاد مبارکه اصفهان با نماد فولاد با محدودیت نوسان قیمت امروز بازگشایی شد.

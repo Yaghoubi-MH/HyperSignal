@@ -148,7 +148,7 @@ function Example() {
       onPress={() => {
         navigation.navigate('gauge');
       }}>
-      <Text style={styles.title}>{title}</Text>
+      <Text allowFontScaling={false} style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
   const renderItem = ({item}) => <Item title={item.CompanySymbol} />;
